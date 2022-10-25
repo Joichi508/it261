@@ -1,15 +1,23 @@
-<form method="POST" action=""> <!--Set the form tag first and the method "POST". -->
-    <label for="">Enter the first number:</label><!--Add a start tag for the label-->
-    <input type="number" name="num1"><br><!--Change type to number and name to all lowercase.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Adder Assignment</title>
+</head>
+<body>
+    <form method="POST" action=""> <!--Set the form tag first and the method "POST". -->
+        <label for="">Enter the first number:</label><!--Add a start tag for the label-->
+        <input type="number" name="num1"><br><!--Change type to number and name to all lowercase.-->
 
-    <label for="">Enter the second number:</label><!--Label tags at the beginning and end-->
-    <input type="number" name="num2"><br><!--Change type to number-->
+        <label for="">Enter the second number:</label><!--Label tags at the beginning and end-->
+        <input type="number" name="num2"><br><!--Change type to number-->
 
-    <input type="submit" value="Add Em!!"><!--Add "-->
+        <input type="submit" value="Add Em!!"><!--Add "-->
 
-</form>
-
-<?php     //adder-wrong.php
+    </form>
+<?php    
 
 if (isset($_POST['num1'], $_POST['num2'])){ // Add $_POST['num2'].
 $num1 = $_POST['num1'];
@@ -22,5 +30,13 @@ echo '<p> and the answer is <br>
 <li style="color:red;">'. $myTotal .'!</li></p>'; //Change " to ' and correct. ! Change before and after ' to '.
 echo'<p><a href="">Reset page</a>'; //Add the ;.
 }
+?>
+
+
+</body>
+</html>
+
+
+
 
 
