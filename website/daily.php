@@ -6,7 +6,7 @@
 
 <p>The word Manga, when translated directly, means “whimsical drawings”. Manga are typically 'comic books' as the West understands them; rather, they represent pieces of Japanese culture and history. This page is to tell you my hobbies by day of the week. The title is manga.</p>
     <h2 class="<?php echo $actDay ;?> "><?php echo $day; ?></h2>
-        <p><?php echo'<img src='.$pic.'>';?></p>
+        <p><img src="images/<?php echo $pic ;?>" alt="<?php echo $alt ;?>"></p>
         <p><?php echo $details; ?></p>
         <h2>Don't see your favorite Manga? Check out the days below!</h2>
 
