@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portal page</title>
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -43,38 +43,38 @@
 
         <h3>Week2</h3>
             <ol>
-                <li><a href="var.php">var.php</a></li>
-                <li><a href="var2.php">var2.php</a></li>
-                <li><a href="currency-logic.php">currency-logic.php</a></li>
-                <li><a href="currency.php">currency.php</a></li>
-                <li><a href="heredoc.php">heredoc.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week2/var.php">var.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week2/vars2.php">vars2.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week2/currency-logic.php">currency-logic.php</a></li>
             </ol>
 
         <h3>Week3</h3>
              <ol>
-                <li><a href="if.php">if.php</a></li>
-                <li><a href="foreach.php">foreach.php</a></li>
-                <li><a href="forloop.php">forloop.php</a></li>
-                <li><a href="date.php">date.php</a></li>
-                <li><a href="switch.php">switch.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week3/if.php">if.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week3/about.php">about.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week3/for-each.php">for-each.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week3/for-loop.php">for-loop.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week3/date.php">date.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week3/switch.php">switch.php</a></li>
             </ol>
 
         <h3>Week4</h3>
              <ol>
-                <li><a href="form1.php">form1.php</a></li>
-                <li><a href="form2.php">form2.php</a></li>
-                <li><a href="form3.php">form3.php</a></li>
-                <li><a href="form-arithmetic.php">form-arithmetic.php</a></li>
-                <li><a href="celcious.php">celcious.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week4/form1.php">form1.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week4/form2.php">form2.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week4/form3.php">form3.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week4/arithmetic-form.php">arithmetic-form.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week4/form-get.php">form-get.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week4/added.php">added.php</a></li>
             </ol>
 
         <h3>Week5</h3>
              <ol>
-                <li><a href="currency1.php">currency1.php</a></li>
-                <li><a href="currency2.php">currency2.php</a></li>
-                <li><a href="currency3.php">currency3.php</a></li>
-                <li><a href="currency4.php">currency4.php</a></li>
-                <li><a href="null.php">null.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week5/currency1.php">currency1.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week5/currency2.php">currency2.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week5/currency3.php">currency3.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week5/currency4.php">currency4.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week5/null.php">null.php</a></li>
             </ol>
 
         <h3>Week6</h3>
