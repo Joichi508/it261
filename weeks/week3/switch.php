@@ -6,7 +6,7 @@
 // } else
 // echo 'Variable has not benn set!';
 
-// echo '<br>';
+// echo '<br>'; 
 // if(isset($_get[today])) {
 //     echo 'Today has been set';
 // } else {
