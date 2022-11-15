@@ -79,9 +79,11 @@
 
         <h3>Week6</h3>
              <ol>
-                <li><a href="form1.php">form1.php</a></li>
-                <li><a href="implode.php">implode.php</a></li>
-                <li><a href="functions.php">functions.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week6/form.php">form.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week6/form2.php">form2.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week6/functions.php">functions.php</a></li>
+                <li><a href="https://jo-codes.com/it261/weeks/week6/thx.php">thx.php</a></li>
+
             </ol>
 
         <h3>Week7</h3>
