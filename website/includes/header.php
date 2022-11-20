@@ -47,7 +47,7 @@ $nav = array(
 
 if (isset($_GET['today'])) {
     $today = $_GET['today'];
-} else {
+} else { 
     $today = date('l');
 }
 
@@ -130,7 +130,7 @@ break;
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">DAily</a></li>
+                <li><a href="">Daily</a></li>
                 <li><a href="">Project</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="">Gallery</a></li>
@@ -141,7 +141,7 @@ break;
             <?php
             foreach($nav as $key => $value) {
                 if (This_page == $key) {
-                    echo '<li><a style="color:red," href=" '.$key.' "> '.$value.' </a></li>';
+                    echo '<li><a style="color:red;" href=" '.$key.' "> '.$value.' </a></li>';
                     } else {
                             echo '<li><a style="color:green," href=" '.$key.' "> '.$value.' </a></li>';
             }
