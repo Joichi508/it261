@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Gallery.php</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <style>
         table{
@@ -28,11 +28,11 @@
 include('./includes/header.php'); ?>
 
 <?php
-$wcup ['GAVI'] = 'Barcelona Spain age 18';
-$wcup['MBAPPE'] = 'Paris Saint-Germain France age 23';
-$wcup['MITOMA'] = 'Brighton Japan age 25';
-$wcup['MUSIALA'] = ' Bayern Munich Germany age 19';
-$wcup ['PULISIC'] = ' Chelsea United States age 24';
+$wcup ['Gavi'] = 'Barcelona Spain age 18';
+$wcup['Mbappe'] = 'Paris Saint-Germain France age 23';
+$wcup['Mitoma'] = 'Brighton Japan age 25';
+$wcup['Musiala'] = ' Bayern Munich Germany age 19';
+$wcup ['Pulisic'] = ' Chelsea United States age 24';
 ?>
 
 
