@@ -22,7 +22,7 @@ if(mysqli_num_rows($result) > 0) {
         $age = stripslashes($row['age']);
         $position = stripslashes($row['position']);
         $info = stripslashes($row['info']);
-        $details = stripslashes($row['details']);
+        $detail = stripslashes($row['detail']);
     }
 
 
@@ -60,13 +60,13 @@ include('./includes/header.php');
     <figcaption>
         <?php
             echo '
-                '.$first_name.' '.$last_name.', '.$position.' #'.$info.'
+                '.$first_name.' '.$last_name.', '.$position.' '.$info.'
             
             ';
         ?>
     </figcaption>
     </figure>
-    <p><i><?php echo $details; ?></i></p>
+    <p><i><?php echo $detail; ?></i></p>
 
 </aside>
 
