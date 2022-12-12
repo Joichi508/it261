@@ -3,7 +3,7 @@
       <li>Copyright &copy;
           2022</li>
       <li>All Rights Reserved</li>
-      <li><a href="../../index.php">Web Design by Alex Buck</a></li>
+      <li><a href="../../index.php">Web Design by JO</a></li>
       <li><a id="html-checker" href="#">HTML Validation</a></li>
       <li><a id="css-checker" href="#">CSS Validation</a></li>
       </ul>
