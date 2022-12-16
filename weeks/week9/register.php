@@ -16,7 +16,7 @@ include('includes/header.php');?>
         <input type="email" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
 
         <label>Username</label>
-        <input type="text" name="username" value="<?php if(isset($_POST['username'])) echo htmlspecialchars($_POST['username']);?>">
+        <input type="text" name="user_name" value="<?php if(isset($_POST['user_name'])) echo htmlspecialchars($_POST['user_name']);?>">
 
         <label>Password</label>
         <input type="password" name="password_1" value="<?php if(isset($_POST['password_1'])) echo htmlspecialchars($_POST['password_1']);?>">

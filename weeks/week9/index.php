@@ -3,13 +3,13 @@ session_start();
 
 include('config.php');
 
-if(!isset($_SESSION['username'])) {
+if(!isset($_SESSION['user_name'])) {
     $_SESSION['msg'] = 'You must login first';
     header('Location:login.php');
 }
 if(isset($_SESSION['logout'])) {
     session_destroy();
-    unset($_SESSION['username']);
+    unset($_SESSION['user_name']);
     header('Location:login.php');
 }
 include('./includes/header.php'); ?>
@@ -22,10 +22,10 @@ include('./includes/header.php'); ?>
             </h3>
         </div>
     <?php endif; ?>
-    <?php if(isset($_SESSION['username'])): ?>
+    <?php if(isset($_SESSION['user_name'])): ?>
         <div class="welcome-logout">
             <h3>
-                Hello, <?= $_SESSION['username'] ?>
+                Hello, <?= $_SESSION['user_name'] ?>
             </h3>
             <p><a href="index.php?logout='1'">Logout</a></p>
         </div>

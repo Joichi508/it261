@@ -9,7 +9,7 @@ if(isset($_POST['reg_user'])) {
     $first_name = mysqli_real_escape_string($iConn, $_POST['first_name']);
     $last_name = mysqli_real_escape_string($iConn, $_POST['last_name']);
     $email = mysqli_real_escape_string($iConn, $_POST['email']);
-    $username = mysqli_real_escape_string($iConn, $_POST['username']);
+    $user_name = mysqli_real_escape_string($iConn, $_POST['user_name']);
     $password_1 = mysqli_real_escape_string($iConn, $_POST['password_1']);
     $password_2 = mysqli_real_escape_string($iConn, $_POST['password_2']);
 
@@ -23,8 +23,8 @@ if(isset($_POST['reg_user'])) {
     if(empty($email)) {
         array_push($errors, 'Email is required!');
     }
-    if(empty($username)) {
-        array_push($errors, 'Username is required!');
+    if(empty($user_name)) {
+        array_push($errors, 'User_name is required!');
     }
     if(empty($password_1)) {
         array_push($errors, 'Password is required!');
@@ -34,7 +34,7 @@ if(isset($_POST['reg_user'])) {
     }
 
 
-    $user_check_query = "SELECT * FROM users WHERE username = '$username' OR email = '$email' LIMIT 1 ";
+    $user_check_query = "SELECT * FROM users WHERE user_name = '$user_name' OR email = '$email' LIMIT 1 ";
 
     $result = mysqli_query($iConn, $user_check_query) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
 
@@ -42,8 +42,8 @@ if(isset($_POST['reg_user'])) {
 
     if($rows) {
 
-        if($rows['username'] == $username) {
-            array_push($errors, 'Username already exists!');
+        if($rows['user_name'] == $user_name) {
+            array_push($errors, 'User_name already exists!');
         }
 
         if($rows['email'] == $email) {
@@ -56,11 +56,11 @@ if(isset($_POST['reg_user'])) {
         
         $password = md5($password_1);
 
-        $query = "INSERT INTO users (first_name, last_name, email, username, password) VALUES ('$first_name', '$last_name', '$email', '$username', '$password')";
+        $query = "INSERT INTO users (first_name, last_name, email, user_name, password) VALUES ('$first_name', '$last_name', '$email', '$username', '$password')";
 
         mysqli_query($iConn, $query);
 
-        $_SESSION['username'] = $username;
+        $_SESSION['user_name'] = $user_name;
         $_SESSION['success'] = $success;
 
         header('Location:login.php');
@@ -69,11 +69,11 @@ if(isset($_POST['reg_user'])) {
 } 
 
 if(isset($_POST['login_user'])) {
-    $username = mysqli_real_escape_string($iConn, $_POST['username']);
+    $user_name = mysqli_real_escape_string($iConn, $_POST['user_name']);
     $password = mysqli_real_escape_string($iConn, $_POST['password']);
 
-    if(empty($username)) {
-        array_push($errors, 'Username is required!');
+    if(empty($user_name)) {
+        array_push($errors, 'User_name is required!');
     }
     if(empty($password)) {
         array_push($errors, 'Password is required!');
@@ -84,18 +84,18 @@ if(isset($_POST['login_user'])) {
         $password = md5($password);
 
         
-        $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+        $query = "SELECT * FROM users WHERE user_name = '$user_name' AND password = '$password'";
         $results = mysqli_query($iConn, $query);
 
         
         if(mysqli_num_rows($results) == 1) {
-            $_SESSION['username'] = $username;
+            $_SESSION['user_name'] = $user_name;
             $_SESSION['success'] = $success;
             
             header('Location:index.php');
 
         } else {
-            array_push($errors, 'Wrong username password cb');
+            array_push($errors, 'Wrong user_name password cb');
         } 
 
     } 
